@@ -50,7 +50,7 @@
             Grid.Row="2"
             Grid.ColumnSpan="2"
             Margin="50,40"
-            BorderThickness="2" Click="Button_Click1"
+            BorderThickness="2" Click="Button_Click_1"
             >
             Moje Kontakty
         </Button>
@@ -60,7 +60,7 @@
             Grid.Row="3"
             Grid.ColumnSpan="2"
             Margin="50,40"
-            BorderThickness="2" Click="Button_Click2"
+            BorderThickness="2" Click="Button_Click_2"
             >
             Dodaj Kontakt Prywatny
         </Button>
@@ -69,7 +69,7 @@
             Grid.Row="4"
             Grid.ColumnSpan="2"
             Margin="50,40"
-            BorderThickness="2"
+            BorderThickness="2" Click="Button_Click_3"
             >
             Dodaj Kontakt Firmowy
         </Button>

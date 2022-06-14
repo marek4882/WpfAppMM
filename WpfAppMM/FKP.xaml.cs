@@ -30,5 +30,13 @@ namespace WpfAppMM
             window.Show();
             this.Close();
         }
+
+
+        private void Navigator_3(object sender, RoutedEventArgs e)
+        {
+            FKF fkf = new FKF();
+            fkf.Show();
+            this.Close();
+        }
     }
 }
