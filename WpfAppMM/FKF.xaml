@@ -5,8 +5,196 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppMM"
         mc:Ignorable="d"
-        Title="FKF" Height="450" Width="800">
+        Title="FKF"
+        Height="500" 
+        Width="850"
+        FontFamily="Baskerville,Georgia"
+        Background="BurlyWood">
     <Grid>
-        
+        <StackPanel Margin="10,10,10,10" Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="3" Grid.RowSpan="3" Orientation="Vertical">
+            <TextBlock FontWeight="SemiBold">Add Contacts</TextBlock>
+            <StackPanel>
+                <Label Target="{Binding ElementName=txtImię}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Imię:   " />
+                        <TextBox Name="txtImię"  Width="200px" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                </Label>
+
+
+                <Label Target="{Binding ElementName=txtNazwisko}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Nazwisko:   " />
+                        <TextBox Name="txtNazwisko"  Width="200px" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                </Label>
+
+
+                <Label Target="{Binding ElementName=txtPseudonim}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Pseudonim:   " />
+                        <TextBox Name="txtPseudonim"  Width="200px" HorizontalAlignment="Left" />
+                    </StackPanel>
+                </Label>
+
+
+                <Label Target="{Binding ElementName=txtNumerTelefonu}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Numer Telefonu:   " />
+                        <TextBox Name="txtNumerTelefonu"  Width="200px" HorizontalAlignment="Left" />
+                    </StackPanel>
+                </Label>
+
+
+                <Label Target="{Binding ElementName=txtAdres}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Adres:   " />
+                        <TextBox Name="txtAdres"  Width="200px" HorizontalAlignment="Left" />
+                    </StackPanel>
+                </Label>
+
+
+                <Label Target="{Binding ElementName=txtEmail}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Email:    " />
+                        <TextBox Name="txtEmail"  Width="200px" HorizontalAlignment="Right" />
+                    </StackPanel>
+                </Label>
+
+
+                <Label Target="{Binding ElementName=txtTelefonZapasowy}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Telefon Zapasowy:  " />
+                        <TextBox Name="txtTelefonZapasowy"  Width="200px" HorizontalAlignment="Right" />
+                    </StackPanel>
+                </Label>
+
+                <Label Target="{Binding ElementName=txt}">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
+                        <AccessText Text="_Urodziny:   " />
+                        <TextBox Name="txtUrodziny"  Width="200px" HorizontalAlignment="Left" />
+                    </StackPanel>
+                </Label>
+
+            </StackPanel>
+
+        </StackPanel>
+
+        <TextBlock Grid.Column="2" 
+                   TextTrimming="CharacterEllipsis"  
+                   FontSize="25px"
+                   Foreground="Black" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Center" Height="28" Width="126"
+                   >
+            PhoneBook
+        </TextBlock>
+
+        <Image Source= "/PNG/pngegg.png"
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Center"
+               Stretch="Uniform"
+               Grid.Column="1"
+               Margin="132,0,0,0" Height="28" Width="28"
+               />
+        <Image Source= "https://d29fhpw069ctt2.cloudfront.net/icon/image/39129/preview.png"
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Center"
+               Stretch="Uniform"
+               Grid.Column="3" Height="28" Width="28"
+               />
+
+        <Button
+            Grid.Column="0"
+            Grid.Row="2"
+            Grid.ColumnSpan="2"
+            Margin="50,40,50,40"
+            BorderThickness="2"
+            >
+            My contacts
+        </Button>
+        <Button
+            Grid.Column="0"
+            Grid.Row="3"
+            Grid.ColumnSpan="2"
+            Margin="50,40,50,40"
+            BorderThickness="2"
+            >
+            Dodaj Kontakt Prywatny
+        </Button>
+        <Button
+            Grid.Column="0"
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            Margin="50,40,50,40"
+            BorderThickness="2"
+            >
+            Dodaj Kontakt Firmowy
+        </Button>
+
+        <Button
+            Grid.Column="2"
+            Grid.Row="5"
+            Margin="40,5,40,5"
+            >
+            Add
+        </Button>
+        <Button
+            Grid.Column="3"
+            Grid.Row="5"
+            Margin="40,5,40,5"
+            >
+            Delete
+        </Button>
+        <Button
+            Grid.Column="4"
+            Grid.Row="5"
+            Margin="40,5,40,5"
+            >
+            Update
+        </Button>
+
+        <RadioButton
+            Grid.Column="2"
+            Grid.Row="1"
+            >
+            Wszystkie
+        </RadioButton>
+        <RadioButton
+            Grid.Column="3"
+            Grid.Row="1"
+            >
+            Prywatne
+        </RadioButton>
+        <RadioButton
+            Grid.Column="4"
+            Grid.Row="1"
+            >
+            Firmowe
+        </RadioButton>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40px" />
+            <RowDefinition Height="22"/>
+            <RowDefinition Height="113"/>
+            <RowDefinition Height="113"/>
+            <RowDefinition Height="113"/>
+            <RowDefinition Height="30px"/>
+        </Grid.RowDefinitions>
     </Grid>
 </Window>
