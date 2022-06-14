@@ -1,0 +1,59 @@
+﻿<Window x:Class="WpfAppMM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppMM"
+        mc:Ignorable="d"
+        Title="PhoneBook"
+        Height="450" 
+        Width="800"
+        FontFamily="Baskerville,Georgia"
+        Background="BurlyWood"
+     >
+
+    <Grid>
+        <TextBlock Grid.Column="2" 
+                   TextTrimming="CharacterEllipsis"  
+                   FontSize="25px"
+                   Foreground="Black" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Bottom" Margin="0,6,0,6"
+                   >
+            PhoneBook
+        </TextBlock>
+
+        <Image Source= "/PNG/pngegg.png"
+               HorizontalAlignment="Right" 
+               VerticalAlignment="Center"
+               Stretch="Uniform"
+               Grid.Column="1"
+               Margin="0,6,0,6"
+               />
+        <Image Source= "https://d29fhpw069ctt2.cloudfront.net/icon/image/39129/preview.png"
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Center"
+               Stretch="Uniform"
+               Grid.Column="3"
+               Margin="0,6,0,6"
+               />
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40px" />
+            <RowDefinition Height="20px"/>
+            <RowDefinition/>
+            <RowDefinition Height="30px"/>
+        </Grid.RowDefinitions>
+        
+
+    </Grid>
+    
+
+</Window>
