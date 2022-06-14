@@ -10,31 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfAppMM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy FKF.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FKF : Window
     {
-        public MainWindow()
+        public FKF()
         {
             InitializeComponent();
-            
-        }
-        private void Button_Click1(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void Button_Click2(object sender, RoutedEventArgs e)
-        {
-            Formularz formularz = new Formularz();
-            formularz.Show();
-            this.Close();
         }
     }
 }

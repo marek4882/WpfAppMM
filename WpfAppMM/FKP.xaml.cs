@@ -10,30 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfAppMM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Logika interakcji dla klasy Formularz.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Formularz : Window
     {
-        public MainWindow()
+        public Formularz()
         {
             InitializeComponent();
-            
-        }
-        private void Button_Click1(object sender, RoutedEventArgs e)
-        {
-            
         }
 
-        private void Button_Click2(object sender, RoutedEventArgs e)
+        private void Click_Button_Back_1(object sender, RoutedEventArgs e)
         {
-            Formularz formularz = new Formularz();
-            formularz.Show();
+            MainWindow window = new MainWindow();
+            window.Show();
             this.Close();
         }
     }
