@@ -22,8 +22,8 @@
             Name="McDataGrid"  
             ></DataGrid>
         <TextBlock Grid.Column="2" 
-                   TextTrimming="CharacterEllipsis"  
-                   FontSize="25px"
+                   TextWrapping="Wrap"  
+                   FontSize="23px"
                    Foreground="Black" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Bottom" Margin="0,6,0,6"
@@ -52,7 +52,7 @@
             Margin="50,40"
             BorderThickness="2" Click="Button_Click_1"
             >
-            Moje Kontakty
+            My contacts
         </Button>
         <Button
             
@@ -62,7 +62,7 @@
             Margin="50,40"
             BorderThickness="2" Click="Button_Click_2"
             >
-            Dodaj Kontakt Prywatny
+            Add private contact
         </Button>
         <Button
             Grid.Column="0"
@@ -71,7 +71,7 @@
             Margin="50,40"
             BorderThickness="2" Click="Button_Click_3"
             >
-            Dodaj Kontakt Firmowy
+            Add company contact
         </Button>
 
 
