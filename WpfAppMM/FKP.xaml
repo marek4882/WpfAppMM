@@ -17,7 +17,7 @@
                 <Label Target="{Binding ElementName=txtImię}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
-                    <AccessText Text="_Imię:   " />
+                    <AccessText Text="_Name:   " />
                     <TextBox Name="txtImię"  Width="200px" HorizontalAlignment="Left"/>
                 </StackPanel>
             </Label>
@@ -26,7 +26,7 @@
             <Label Target="{Binding ElementName=txtNazwisko}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
-                    <AccessText Text="_Nazwisko:   " />
+                    <AccessText Text="_LastName:   " />
                     <TextBox Name="txtNazwisko"  Width="200px" HorizontalAlignment="Left"/>
                 </StackPanel>
             </Label>
@@ -35,7 +35,7 @@
             <Label Target="{Binding ElementName=txtPseudonim}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
-                    <AccessText Text="_Pseudonim:   " />
+                    <AccessText Text="_NickName:   " />
                     <TextBox Name="txtPseudonim"  Width="200px" HorizontalAlignment="Left" />
                 </StackPanel>
             </Label>
@@ -44,7 +44,7 @@
             <Label Target="{Binding ElementName=txtNumerTelefonu}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
-                    <AccessText Text="_Numer Telefonu:   " />
+                    <AccessText Text="_PhoneNumber:   " />
                     <TextBox Name="txtNumerTelefonu"  Width="200px" HorizontalAlignment="Left" />
                 </StackPanel>
             </Label>
@@ -53,7 +53,7 @@
             <Label Target="{Binding ElementName=txtAdres}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
-                    <AccessText Text="_Adres:   " />
+                    <AccessText Text="_Address:   " />
                     <TextBox Name="txtAdres"  Width="200px" HorizontalAlignment="Left" />
                 </StackPanel>
             </Label>
@@ -71,16 +71,16 @@
             <Label Target="{Binding ElementName=txtTelefonZapasowy}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
-                    <AccessText Text="_Telefon Zapasowy:  " />
+                    <AccessText Text="_BackupPhone:  " />
                     <TextBox Name="txtTelefonZapasowy"  Width="200px" HorizontalAlignment="Right" />
                 </StackPanel>
             </Label>
 
-            <Label Target="{Binding ElementName=txt}">
+            <Label Target="{Binding ElementName=txtBirthday}">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="http://cdn1.iconfinder.com/data/icons/fatcow/16/bullet_black.png" />
-                    <AccessText Text="_Urodziny:   " />
-                    <TextBox Name="txtUrodziny"  Width="200px" HorizontalAlignment="Left" />
+                    <AccessText Text="_Birthday:   " />
+                    <TextBox Name="txtBirthday"  Width="200px" HorizontalAlignment="Left" />
                 </StackPanel>
             </Label>
 
@@ -89,8 +89,8 @@
         </StackPanel>
 
         <TextBlock Grid.Column="2" 
-                   TextTrimming="CharacterEllipsis"  
-                   FontSize="25px"
+                   TextWrapping="Wrap"  
+                   FontSize="23px"
                    Foreground="Black" 
                    HorizontalAlignment="Center" 
                    VerticalAlignment="Center" Height="28" Width="126"
@@ -119,7 +119,7 @@
             Margin="50,40,50,40"
             BorderThickness="2" Click="Click_Button_Back_1"
             >
-            Moje Kontakty
+            My contacts
         </Button>
         <Button
             Grid.Column="0"
@@ -128,7 +128,7 @@
             Margin="50,40,50,40"
             BorderThickness="2"
             >
-            Dodaj Kontakt Prywatny
+            Add private contacts
         </Button>
         <Button
             Grid.Column="0"
@@ -137,7 +137,7 @@
             Margin="50,40,50,40"
             BorderThickness="2" Click="Navigator_3"
             >
-            Dodaj Kontakt Firmowy
+            Add company contacts
         </Button>
 
         <Button
